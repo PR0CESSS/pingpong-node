@@ -143,7 +143,7 @@ Go to [PINGPONG](https://harvester.pingpong.build/login) site and log in
 + **Step two**: Add Devices
 
 In the **Devices** tab add a new device and give it a name
-![add_devices](https://github.com/PR0CESSS/pingpong-node/blob/main/media/add_devices.png)
+![add_devices](https://github.com/PR0CESSS/pingpong-node/blob/main/media/add_device.png)
 
 <br>
 
