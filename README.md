@@ -3,25 +3,29 @@
 <br>
 
 ![cover](https://github.com/PR0CESSS/pingpong-node/blob/main/media/cover.png)
+
 <br>
+
 We are running this node on an **Ubuntu Linux server** (VPS), The PINGPONG app has a GUI on macOS and Windows so you'll be fine probably if you want to mine on those.
-<br>
-<br>
-<h1 align="center">Table of content</h1>
+
 <br>
 <br>
 
-+ About The Project
-+ Requirements
-+ Dependencies
-+ Main Guide
-+ Self-Custody Option Guide (Mining 0G, AIOZ and Grass)
-+ Errors and Misc
+<h1 align="center">📃Table Of content📃</h1>
+
+<br>
+<br>
+
++ 💠About The Project💠
++ 💻Requirement💻
++ ⚡Dependencies⚡
++ ✅Main Guide✅
++ 🛑Errors and Misc🛑
 <br>
 <br>
 
 
-<h1 align="center">About The Project</h1>
+<h1 align="center">💠About The Project💠</h1>
 <br>
 
 + PINGPONG is building the largest DePIN liquidity and service aggregator.
@@ -41,14 +45,14 @@ We are running this node on an **Ubuntu Linux server** (VPS), The PINGPONG app h
 <br>
 <br>
 
-<h1 align="center">Requirements</h1>
+<h1 align="center">💻Requirements💻</h1>
 <br>
 
 ![requirements](https://github.com/PR0CESSS/pingpong-node/blob/main/media/hardware_requirements.png)
 <br>
 <br>
 
-<h1 align="center">Dependencies</h1>
+<h1 align="center">⚡Dependencies⚡</h1>
 <br>
 
 + The only dependency we need to run PINGPONG app is [Docker](https://www.docker.com/)
@@ -130,7 +134,7 @@ sudo apt-get install wget
 
 <br>
 
-<h1 align="center">Main Guide</h1>
+<h1 align="center">✅Main Guide✅</h1>
 
 <br>
 
@@ -207,6 +211,7 @@ Use your device ID from **Steo three** instead of `your_device_key`
 **Stopped**: You have stopped the network's running. Click the start button on the right to restart the network.
 
 <br>
+<br>
 
 **The following guide is related to Omni-chain DePINFi Money Market**:
 
@@ -218,7 +223,11 @@ More info will be added here if necessary
 
 <br>
 
-<h1 align="center">Errors And Mics</h1>
+<h1 align="center">🛑Errors And Mics🛑</h1>
 
 <br>
 
+
+---
+
+------------| If this guide was useful, Please consider giving it a ⭐ |------------
