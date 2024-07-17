@@ -1,2 +1,3 @@
-# pingpong-node
-A guide for running PINGPONG nodes
+# PINGPONG Node
+A guide for running [PINGPONG](https://www.pingpong.build/)
+
