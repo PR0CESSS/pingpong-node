@@ -134,6 +134,10 @@ sudo apt-get install wget
 
 <br>
 
+**Aggregated & Dynamic Mining App** Guide:
+
+<br>
+
 + **Step One**: Login
 
 Go to [PINGPONG](https://harvester.pingpong.build/login) site and log in
@@ -151,7 +155,7 @@ In the **Devices** tab add a new device and give it a name
 >**Usage Priority**: Prioritize using your devices for program tasks while utilizing idle resources for mining. Perfect for personal devices in use!
 >**Mining Priority**: Prioritize using your device's full computing resources for maximum efficiency in mining. Perfect for idle devices!
 
-Copy the device ID, We will be using it when we run the app on the server
++ Copy the device ID, We will be using it when we run the app on the server
 Note that if don't copy it the first time when you make the device, you need to regenerate the device ID to be able to copy it again, It's recommended to save it somewhere safe after creating the device.
 
 <br>
@@ -167,7 +171,54 @@ wget https://pingpong-build.s3.ap-southeast-1.amazonaws.com/linux/latest/PINGPON
 
 + **Step four**: Run the PINGPONG App
 
-Run the following command in Linux and paste in your Device key:
++ Make a screen so the app can run even if you close the terminal:
+```console
+screen -S pingpong
+```
+
+<br>
+
++ Run the following command in Linux:
 ```console
 chmod +x ./PINGPONG && ./PINGPONG --key your_device_key
 ```
+Use your device ID from **Steo three** instead of `your_device_key`
+
++ Press `Ctrl + A + D` in order to detach from the screen (The app will be running in the background)
+
++ Also you can check the stats in your dashboard in the [PINGPONG](https://mining.pingpong.build/dashboard) site
+
+![stats](https://github.com/PR0CESSS/pingpong-node/blob/main/media/stats.png)
+
+<br>
+
++ **Stats guide**:
+
+**Starting**: You are initiating and joining a decentralized network.
+
+**Unconfigured**: This network needs you to enter specific information to launch. Click the settings button on the right to start filling in your configuration details. Please refer to Self-Custody Option Guide.
+
+**Running**: Your project has joined the decentralized network and is running well. If you notice no changes in earnings, this is normal due to the network's minimum earnings display limit.
+
+**Failed**: Your project has failed to run. Please check the cause of the failure and try restarting the network after resolving the issue.
+
+**Unsupported**: Your computer's hardware does not meet the network's requirements, so this network cannot run. If you upgrade your hardware, you can exit PINGPONG and restart.
+
+**Stopped**: You have stopped the network's running. Click the start button on the right to restart the network.
+
+<br>
+
+**The following guide is related to Omni-chain DePINFi Money Market**:
+
+<br>
+
+[Check the official guide](https://docs.pingpong.build/pingpong/aggregated-and-dynamic-mining-app/run-pingpong-app/self-custody-option-guide)
+
+More info will be added here if necessary
+
+<br>
+
+<h1 align="center">Errors And Mics</h1>
+
+<br>
+
