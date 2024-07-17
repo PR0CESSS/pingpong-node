@@ -1,66 +1,121 @@
 
 # A guide to run [PINGPONG](https://www.pingpong.build/) app (mine)
-
- 
- We are running this node on an **Ubuntu Linux server** (VPS), The PINGPONG app has a GUI on macOS and Windows so you'll be fine probably if you want to mine on those.
-
-## Table Of Content
-
+<br>
+PIC(cover)
+<br>
+We are running this node on an **Ubuntu Linux server** (VPS), The PINGPONG app has a GUI on macOS and Windows so you'll be fine probably if you want to mine on those.
+<br>
+<br>
+<h1 align="center">Table of content</h1>
+<br>
+<br>
 
 + About The Project
 + Requirements
 + Dependencies
 + Main Guide
 + Self-Custody Option Guide (Mining 0G, AIOZ and Grass)
+<br>
+<br>
 
 
----
+<h1 align="center">About The Project</h1>
+<br>
+
++ PINGPONG is building the largest DePIN liquidity and service aggregator.
+<br>
+
++ PINGPONG steps in as the pivotal DePIN liquidity and service aggregator. We transform compute resources into a new form of liquidity and elevate the quality of DePIN services to energize the DePIN ecosystem.
+<br>
+
++ Our mission is straightforward: **We're here to democratize access to compute resources through DePINFi**.
+<br>
+
+ + In the Supply side of DePIN, PINGPONG has 2 products that are going to be covered in this guide. **Aggregated & Dynamic Mining App** and **Omni-chain DePINFi Money Market**.
+<br>
+<br>
 
 
-## About the project: 
+<br>
+<br>
 
-PINGPONG is building the largest DePIN liquidity and service aggregator.
+<h1 align="center">Requirements</h1>
+<br>
 
+PIC (req)
+<br>
+<br>
 
- PINGPONG steps in as the pivotal DePIN liquidity and service aggregator. We transform compute resources into a new form of liquidity and elevate the quality of DePIN services to energize the DePIN ecosystem.
+<h1 align="center">Dependencies</h1>
+<br>
 
++ The only dependency we need to run PINGPONG app is [Docker](https://www.docker.com/)
+<br>
 
-Our mission is straightforward: **We're here to democratize access to compute resources through DePINFi**.
-
-
- In the Supply side of DePIN, PINGPONG has 2 products that are going to be covered in this guide. **Aggregated & Dynamic Mining App** and **Omni-chain DePINFi Money Market**.
-
-
----
-
-
-## Requirements:
-
-PIC
-
-
----
-
-
-## Dependencies:
-
-
- The only dependency we need to run PINGPONG app is [Docker](https://www.docker.com/)
-
- 
- How to install docker on Linux:
++ How to install docker on Linux:
+<br>
 
 1. Update your Linux packages:
 
 ```bash
-sudo apt update && sudo apt upgrade -y
+sudo apt-get update && sudo apt-get upgrade -y
 ```
-
+<br>
 
 2. Download Docker packages:
 
 ```bash
-	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
+<br>
 
+3. Add docker to your packages:
+
+```bash
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+```
+<br>
+
+4. Update packages:
+
+```bash
+sudo apt-get update
+```
+<br>
+
+5. Install Docker:
+
+```bash
+sudo apt-get install docker-ce
+```
+<br>
+
+6. Start Docker:
+
+```bash
+sudo systemctl enable docker
+
+sudo systemctl start docker
+```
+<br>
+
+7.  Give permission to Docker:
+
+```bash
+sudo usermod -aG docker $USER
+```
+<br>
+
+8. Test Docker:
+
+```bash
+docker run test
+```
+<br>
+<br>
+<h1 align="center">Main Guide</h1>
+<br>
 
