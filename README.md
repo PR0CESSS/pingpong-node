@@ -251,7 +251,13 @@ Use your device ID from **Steo three** instead of `your_device_key`
 
 ```console
 ./PINGPONG config set --0g=your_private_key
+```
+
+```console
 ./PINGPONG stop --depins=0g
+```
+
+```console
 ./PINGPONG start --depins=0g
 ```
 
@@ -279,7 +285,13 @@ Use your device ID from **Steo three** instead of `your_device_key`
 
 ```console
 ./PINGPONG config set --aioz=your_private_key
+```
+
+```console
 ./PINGPONG stop --depins=aioz
+```
+
+```console
 ./PINGPONG start --depins=aioz
 ```
 
@@ -289,10 +301,69 @@ Use your device ID from **Steo three** instead of `your_device_key`
 
 <br>
 
++ **Grass Configuration Guide**:
 
 <br>
 
+**Step 1**: Open Developer tools.
+
+>Click on the three vertical dots (menu) in the upper-right corner of your browser.
+>Navigate to More tools.
+>Click on Developer tools.
+
+<br>
+
+**Step 2**: Navigate to the Application tab.
+
+>In the Developer Tools pane, click on the Application tab.
+>If you don't see the Application tab, you might need to expand the pane or click on the double arrow (>>) to see more tabs.
+
+<br>
+
+**Step 3**: Locate LocalStorage.
+
+>In the left-hand sidebar, under the Storage section, find and click on Local Storage.
+>You will see a list of domains.
+>Click on the domain https://app.getgrass.io.
+
+<br>
+
+**Step 4**: View LocalStorage data.
+
+>In the right-hand pane, find the key named userId.
+
+<br>
+
+**Step 5**: Copy the value of userId.
+
+> Double-click on the value field of userId to select it.
+> Copy the value, Do not include the double quotes.
+
+<br>
+
+![grass](https://github.com/PR0CESSS/pingpong-node/blob/main/media/grass.png)
+
+<br>
+
+Step 6: Configure the key you obtained using the following command.
+
+
+
 <h1 align="center">🛑Errors And Mics🛑</h1>
+
+<br>
+
+```console
+./PINGPONG config set --grass=the_value_you_copied
+```
+
+```console
+./PINGPONG stop --depins=grass
+```
+
+```console
+./PINGPONG start --depins=grass
+```
 
 <br>
 
