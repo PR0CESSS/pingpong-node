@@ -347,10 +347,6 @@ Use your device ID from **Steo three** instead of `your_device_key`
 
 Step 6: Configure the key you obtained using the following command.
 
-
-
-<h1 align="center">🛑Errors And Mics🛑</h1>
-
 <br>
 
 ```console
@@ -364,6 +360,12 @@ Step 6: Configure the key you obtained using the following command.
 ```console
 ./PINGPONG start --depins=grass
 ```
+
+<br>
+
+<h1 align="center">🛑Errors And Mics🛑</h1>
+
+
 
 <br>
 
