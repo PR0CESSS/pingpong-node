@@ -142,13 +142,13 @@ sudo apt-get install wget
 
 <br>
 
-+ **Step One**: Login
++ **Step 1**: Login
 
 Go to [PINGPONG](https://harvester.pingpong.build/login) site and log in
 
 <br>
 
-+ **Step two**: Add Devices
++ **Step 2**: Add Devices
 
 In the **Devices** tab add a new device and give it a name
 ![add_devices](https://github.com/PR0CESSS/pingpong-node/blob/main/media/add_device.png)
@@ -164,7 +164,7 @@ Note that if don't copy it the first time when you make the device, you need to 
 
 <br>
 
-+ **Step Three**: Download the PINGPONG app
++ **Step 3**: Download the PINGPONG app
 
 Download the Linux version of the app:
 ```console
@@ -173,7 +173,7 @@ wget https://pingpong-build.s3.ap-southeast-1.amazonaws.com/linux/latest/PINGPON
 
 <br>
 
-+ **Step four**: Run the PINGPONG App
++ **Step 4**: Run the PINGPONG App
 
 + Make a screen so the app can run even if you close the terminal:
 ```console
@@ -213,13 +213,82 @@ Use your device ID from **Steo three** instead of `your_device_key`
 <br>
 <br>
 
-**The following guide is related to Omni-chain DePINFi Money Market**:
+<h1 align="center">✅Omni-chain DePINFi Money Marke Guide✅</h1>
 
 <br>
 
-[Check the official guide](https://docs.pingpong.build/pingpong/aggregated-and-dynamic-mining-app/run-pingpong-app/self-custody-option-guide)
++ **0G Configuration Guide**:
 
-More info will be added here if necessary
++ <br>
+
+**Step 1**: Get an account in MetaMask for 0G faucet. It will be used to run 0G and receive rewards.
+
+<br>
+
+**Step 2**: Visit the 0G [faucet website](https://faucet.0g.ai/), and enter your account address.
+
+<br>
+
+**Step 3**: Request AOGI token and wait for the faucet to succeed.
+
+<br>
+
+**Step 4**: Export the private key of this account:
+
+![getting_private_key](https://github.com/PR0CESSS/pingpong-node/blob/main/media/getting_private_key.gif)
+
+<br>
+
+![getting_private_key_2](https://github.com/PR0CESSS/pingpong-node/blob/main/media/getting_private_key_2.gif)
+
+<br>
+
+![getting_private_key_3](https://github.com/PR0CESSS/pingpong-node/blob/main/media/getting_private_key_3.gif)
+
+<br>
+
+**Step 5**: Enter the key in your command line like below to complete the configuration and start:
+
+```console
+./PINGPONG config set --0g=your_private_key
+./PINGPONG stop --depins=0g
+./PINGPONG start --depins=0g
+```
+
+<br>
+
++ Replace `your_private_key` in the command obove
+
+<br>
+
++ **AIOZ Configuration Guide**:
+
+<br>
+
+**Step 1**: Follow the [AIOZ official guide](https://docs.aioz.network/aioz-depin/aioz-nodes/cli-node) to generate a new mnemonic phrase and private key.
+
+<br>
+
+**step 2**: Copy the key value from the "priv_key" field in the command response. Ensure you store this data securely.
+
+![aioz_config_response](https://github.com/PR0CESSS/pingpong-node/blob/main/media/aioz_config_response.png)
+
+<br>
+
+**Step 3**: Enter the key in your command line like below to complete the configuration and start:
+
+```console
+./PINGPONG config set --aioz=your_private_key
+./PINGPONG stop --depins=aioz
+./PINGPONG start --depins=aioz
+```
+
+<br>
+
++ Replace `your_private_key` in the command obove
+
+<br>
+
 
 <br>
 
